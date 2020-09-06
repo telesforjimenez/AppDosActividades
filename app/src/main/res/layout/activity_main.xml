@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="15dp">
+
+            <EditText
+                android:id="@+id/dtNombrecompleto"
+                android:layout_marginTop="10dp"
+                android:hint="@string/nombreCompletoHint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </EditText>
+
+            <DatePicker
+                android:id="@+id/dpFechaNacimiento"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:datePickerMode="calendar"/>
+
+            <EditText
+                android:id="@+id/dtTelefono"
+                android:layout_marginTop="10dp"
+                android:hint="@string/telefonoHint"
+                android:inputType="phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </EditText>
+
+            <EditText
+                android:id="@+id/dtEmail"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:hint="@string/emailHint"
+                android:inputType="textWebEmailAddress"
+                android:layout_height="wrap_content">
+            </EditText>
+
+            <EditText
+                android:id="@+id/dtDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:hint="@string/descripcionHint"
+                android:inputType="text|textMultiLine"
+                android:layout_marginTop="10dp"
+                android:scrollbars="vertical">
+
+            </EditText>
+
+            <Button
+                android:id="@+id/btnSiguiente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/siguiente"
+                android:layout_marginBottom="40dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

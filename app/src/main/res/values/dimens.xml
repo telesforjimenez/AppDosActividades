@@ -1,0 +1,4 @@
+<resources>
+   <dimen name="titulo">35dp</dimen>
+    <dimen name="espacio">20dp</dimen>
+</resources>
