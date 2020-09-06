@@ -15,13 +15,21 @@
             android:orientation="vertical"
             android:layout_margin="15dp">
 
-            <EditText
-                android:id="@+id/dtNombrecompleto"
-                android:layout_marginTop="10dp"
-                android:hint="@string/nombreCompletoHint"
+
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-            </EditText>
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/nombreCompletoHint"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/dtNombrecompleto"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
 
             <DatePicker
                 android:id="@+id/dpFechaNacimiento"
@@ -31,34 +39,54 @@
                 android:layout_height="match_parent"
                 android:datePickerMode="calendar"/>
 
-            <EditText
-                android:id="@+id/dtTelefono"
-                android:layout_marginTop="10dp"
-                android:hint="@string/telefonoHint"
-                android:inputType="phone"
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-            </EditText>
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-            <EditText
-                android:id="@+id/dtEmail"
-                android:layout_marginTop="10dp"
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/telefonoHint"
+                    android:inputType="phone"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/dtTelefono"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:hint="@string/emailHint"
-                android:inputType="textWebEmailAddress"
-                android:layout_height="wrap_content">
-            </EditText>
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-            <EditText
-                android:id="@+id/dtDescripcion"
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/emailHint"
+                    android:inputType="textWebEmailAddress"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/dtEmail"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:hint="@string/descripcionHint"
-                android:inputType="text|textMultiLine"
-                android:layout_marginTop="10dp"
-                android:scrollbars="vertical">
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-            </EditText>
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:hint="@string/descripcionHint"
+                    android:inputType="text|textMultiLine"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/dtDescripcion"
+                    android:scrollbars="vertical"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
 
             <Button
                 android:id="@+id/btnSiguiente"
